@@ -40,14 +40,12 @@ namespace hepsiburadaCase
         }
         public void YorumlarButton()
         {
-            Thread.Sleep(1500);
             WebDriverWait wait = new WebDriverWait(webDriver, TimeSpan.FromSeconds(10));
             element = wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(kontrolOzellikleri.yorumlarButton));
             element.Click();
         }
         public void IlkYorumEvetTikla()
         {
-            Thread.Sleep(1500);
             WebDriverWait wait = new WebDriverWait(webDriver, TimeSpan.FromSeconds(10));
             element = wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(kontrolOzellikleri.ilkYorumEvetTikla));
             element.Click();
